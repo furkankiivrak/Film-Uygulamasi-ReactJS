@@ -1,0 +1,16 @@
+.app {
+  background-color: #1c1c1c;
+  color: white;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin: 20px 0;
+}

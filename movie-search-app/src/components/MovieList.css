@@ -1,0 +1,42 @@
+.movie-list {
+  display: flex;
+  flex-wrap: wrap; /* Kartların bir satıra sığmadığında alt satıra geçmesini sağlar */
+  justify-content: space-between; /* Kartlar arasındaki boşluğu dengeler */
+  max-width: 1200px; /* Genişliği sınırlayarak ortada hizalayacağız */
+  margin: 0 auto; /* Tüm listeyi ortalar */
+}
+
+.movie-card {
+  flex: 0 1 calc(20% - 10px); /* 5 adet kartın yan yana sığması için her birine %20 genişlik veriyoruz, aradaki boşluklarla birlikte */
+  margin-bottom: 20px; /* Kartlar arasına alt boşluk ekler */
+  background-color: #2b2b2b; /* Kartın arka plan rengi */
+  border-radius: 8px; /* Kartın köşelerini yuvarlar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge efekti ekler */
+  transition: transform 0.2s ease-in-out; /* Hover'da büyütme efekti geçişi */
+}
+
+.movie-card:hover {
+  transform: scale(1.05); /* Hover ile kartı biraz büyütür */
+}
+
+.movie-card img {
+  width: 100%; /* Kartın genişliği kadar resmi ayarlar */
+  height: auto; /* Görüntünün orantısını korur */
+  border-radius: 8px 8px 0 0; /* Üst köşeleri yuvarlar */
+}
+
+.movie-info {
+  padding: 10px; /* İçerik ile kenarlar arasında boşluk sağlar */
+  color: white; /* Metin rengini beyaz yapar */
+  text-align: center; /* Metinleri ortalar */
+}
+
+.movie-info h3 {
+  font-size: 16px; /* Başlık boyutunu küçült */
+  margin: 10px 0; /* Üst ve alt boşluk ayarla */
+}
+
+.movie-info p {
+  font-size: 14px; /* Açıklama boyutunu küçült */
+  margin: 5px 0; /* Açıklama metni arasında boşluk bırak */
+}

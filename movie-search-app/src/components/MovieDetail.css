@@ -1,0 +1,40 @@
+.movie-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 1200px; /* Genişliği artırıldı */
+  margin: 20px auto;
+}
+
+.movie-card {
+  width: 80%; /* Kart genişliği artırıldı */
+  padding: 20px;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center; /* İçeriği ortalamak için eklendi */
+}
+
+.movie-card img {
+  width: 100%; /* Poster genişliği kartın genişliği ile uyumlu olacak */
+  max-width: 400px; /* Poster boyutunu daha küçük tutmak için sınır koyabiliriz */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  display: block; /* Ortalamak için eklendi */
+  margin-left: auto; /* Ortalamak için eklendi */
+  margin-right: auto; /* Ortalamak için eklendi */
+}
+
+.movie-trailer iframe {
+  width: 100%; /* Fragman genişliği kartın genişliği ile uyumlu olacak */
+  height: 450px; /* Fragman yüksekliği ayarlandı */
+  position: relative; /* Üzerinde başka elementlerin çıkmasını engeller */
+  z-index: 1; /* Fragman videonun üstünde tıklanabilir hale gelir */
+  border: none; /* İstediğin görünümü elde etmek için kenarlığı kaldır */
+}

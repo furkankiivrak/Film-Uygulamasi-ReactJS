@@ -1,0 +1,49 @@
+.movie-card {
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s; 
+  border-radius: 15px; 
+  overflow: hidden; 
+  background-color: #2e2e2e; 
+  position: relative; 
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); 
+  width: 220px; /* Kart genişliğini artırdım */
+  margin: 15px; 
+}
+
+.movie-card:hover {
+  transform: translateY(-10px) scale(1.05); 
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6); 
+}
+
+.movie-card img {
+  width: 100%; 
+  height: auto; 
+  display: block;
+  transition: transform 0.3s; 
+}
+
+.movie-card h3, .movie-card p {
+  margin: 10px; /* Metin aralığını artırdım */
+  color: #fff; 
+  font-size: 18px; /* Başlık boyutunu artırdım */
+}
+
+.movie-card img:hover {
+  transform: scale(1.1); /* Resmi biraz daha fazla büyütüyorum */
+}
+
+.movie-card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  opacity: 0; 
+  transition: opacity 0.3s; 
+}
+
+.movie-card:hover:before {
+  opacity: 1; 
+}

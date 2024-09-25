@@ -1,0 +1,49 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #212121; /* Arka plan rengi */
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  color: white; /* Yazı rengi */
+  text-decoration: none; /* Alt çizgi yok */
+  font-size: 18px; /* Font boyutu */
+  padding: 10px 20px; /* İç boşluk */
+  transition: color 0.3s, transform 0.3s; /* Geçiş efektleri */
+  border-radius: 5px; /* Köşe yuvarlama */
+}
+
+.nav-link:hover {
+  color: #ff5c5c; /* Hover rengi */
+  animation: blink 0.5s infinite alternate;
+  background-color: rgba(255, 92, 92, 0.2); /* Hover arka plan rengi */
+}
+
+.nav-link.active {
+  color: #ff5c5c; /* Aktif sayfa rengi */
+  font-weight: bold; /* Kalın yazı */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1; /* Tam görünür */
+  }
+  100% {
+    opacity: 0.5; /* Yarı görünür */
+  }
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Dikey hizalama */
+    align-items: flex-start; /* Soldan hizalama */
+  }
+  .nav-link {
+    padding: 10px 15px; /* İç boşluk */
+    width: 100%; /* Tam genişlik */
+  }
+}
